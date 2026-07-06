@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Business Analyst · Customer Success & Data Insights</title>
-<meta name="description" content="Portfolio of a client success and wealth management professional with business analytics expertise.">
+<title>Giriraj Vyas — Business Analyst · Customer Success & Data Insights</title>
+<meta name="description" content="Portfolio of Giriraj Vyas — business analyst and customer success professional with business analytics expertise.">
 
 <!-- ============================================================
      ANALYTICS SNIPPET GOES HERE
@@ -135,6 +135,28 @@ section{padding:64px 0;border-bottom:1px solid var(--line)}
 .btn{display:inline-block;background:var(--ink);color:#fff;font-weight:600;font-size:14px;padding:12px 22px;border:none;cursor:pointer}
 .btn:hover{background:var(--ledger);text-decoration:none;color:#fff}
 
+/* live ratings */
+.agg{display:flex;align-items:center;gap:22px;border:1px solid var(--line);background:#fff;padding:22px 26px;margin-bottom:28px;flex-wrap:wrap}
+.agg .big{font-family:var(--mono);font-size:44px;font-weight:500;line-height:1}
+.agg .stars{font-size:22px}
+.agg .cnt{font-size:13px;color:var(--muted)}
+.rform{border:1px solid var(--line);background:#fff;padding:26px;margin-top:28px}
+.rform h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:16px}
+.rform .fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.rform .fields{grid-template-columns:1fr}}
+.rform label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+.rform input,.rform textarea{width:100%;border:1px solid var(--line);background:var(--paper);padding:11px 12px;font-family:var(--sans);font-size:15px;color:var(--ink)}
+.rform textarea{grid-column:1/-1;min-height:90px;resize:vertical}
+.rform .full{grid-column:1/-1}
+.starpick{display:flex;gap:6px}
+.starpick button{background:none;border:none;font-size:28px;color:var(--line);cursor:pointer;padding:2px;line-height:1}
+.starpick button.on{color:var(--brass)}
+.rform .actions{display:flex;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}
+.rmsg{font-size:14px;color:var(--ledger)}
+.rmsg.err{color:#a33}
+.empty-state{border:1px dashed var(--line);padding:32px;text-align:center;color:var(--muted);font-family:var(--serif);font-style:italic;font-size:17px}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+
 /* contact */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 @media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
@@ -152,7 +174,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
 
 <header>
   <div class="wrap nav">
-    <span class="brand">YOUR NAME · FACT SHEET</span>
+    <span class="brand">GIRIRAJ VYAS · FACT SHEET</span>
     <nav aria-label="Main">
       <ul>
         <li><a href="#skills">Skills</a></li>
@@ -174,12 +196,12 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Business &amp; Systems Analysis · Customer Success · Data Insights</p>
-        <h1>Your Name</h1><!-- CUSTOMIZE: your full name -->
-        <p class="tagline">I sit between customers and systems — finding where people get stuck, proving it with data, and fixing the workflow. Seven years across financial advisory in Mumbai and Salesforce-driven service operations in Toronto.</p>
+        <h1>Giriraj Vyas</h1>
+        <p class="tagline">I sit between customers and systems — finding where people get stuck, proving it with data, and fixing the workflow. Six-plus years across financial advisory in India and Salesforce-driven service operations in Toronto, now based in Edmonton.</p>
       </div>
       <figure class="photo-frame">
-        <div class="ph">YOUR PHOTO HERE<br>(replace this block with an &lt;img&gt; tag)</div>
-        <figcaption>TORONTO, ON — CANADA</figcaption>
+        <img src="photo.jpg" alt="Giriraj Vyas" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block" onerror="this.outerHTML='<div class=\'ph\'>Photo coming soon</div>'">
+        <figcaption>GIRIRAJ VYAS — EDMONTON, AB</figcaption>
       </figure>
     </div>
 
@@ -187,7 +209,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
       <div role="listitem"><div class="k">200</div><div class="l">Client relationships managed end-to-end at peak</div></div>
       <div role="listitem"><div class="k">15–25%</div><div class="l">Reduction in avoidable contacts via Salesforce insights</div></div>
       <div role="listitem"><div class="k">15+</div><div class="l">Staff trained on systems &amp; workflows</div></div>
-      <div role="listitem"><div class="k">7 yrs</div><div class="l">Across finance, advisory &amp; customer success</div></div>
+      <div role="listitem"><div class="k">20–30%</div><div class="l">Faster onboarding through structured training delivery</div></div>
     </div>
   </div>
 </div>
@@ -210,6 +232,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
         <span class="sub">Three years of hands-on advisory experience; targeting formal certification as the next allocation.</span>
       </div>
     </div>
+    <p class="reveal" style="margin-top:28px;font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.04em;line-height:2">TOOLBOX — Salesforce CRM &amp; Einstein Analytics · Zendesk · PeopleSoft · Power BI · Tableau · SQL · Excel (Advanced) · Power Automate · SharePoint · AI Prompt Engineering &amp; Copilot</p>
   </div>
 </section>
 
@@ -233,6 +256,18 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
           <li>Liaised with IT, Finance and academic teams to resolve issues and communicate timelines across high-volume peak cycles.</li>
         </ul>
         <p class="note">Progression: Office Assistant (Nov 2021 – May 2023) → Enrolment &amp; Financial Aid (Jun 2023 – Sep 2025)</p>
+      </div>
+    </article>
+
+    <article class="role reveal">
+      <div class="when">Nov 2023 — Feb 2024<br>Toronto, ON</div>
+      <div>
+        <h3>Issue Management Lead (Volunteer)</h3>
+        <p class="org">Seneca Polytechnic Hackathon</p>
+        <ul>
+          <li>Coordinated logistics and stakeholder communications for a 300+ participant event, delivering a seamless experience across the full event lifecycle.</li>
+          <li>Designed a feedback program and delivered insights that drove measurable improvements to future participant experience.</li>
+        </ul>
       </div>
     </article>
 
@@ -342,7 +377,23 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
         <p class="meta">Seneca Polytechnic · Office of the Registrar</p>
       </div>
     </div>
-    <p class="pgroup reveal">Track C — Academic Research</p>
+    <p class="pgroup reveal">Track C — Personal &amp; Entrepreneurial</p>
+    <div class="projects">
+      <div class="card reveal">
+        <span class="tag">Current · Business Analysis · Startup</span>
+        <h3>Rentro — Peer-to-Peer Rental Platform (Canada)</h3>
+        <p>Working as Business Analyst / Consultant alongside founder and investor Siddhardha Venuthurupalli on Rentro, a Canadian rental marketplace inspired by platforms like SharePal — currently in the development stage. Contributing to market analysis, requirements definition, and platform workflow design.</p>
+        <p class="meta">Rentro · In development · Present</p>
+      </div>
+      <div class="card reveal">
+        <span class="tag">Quantitative Analysis · Python-Style Modelling</span>
+        <h3>Fundamentals-Based Investment Screener</h3>
+        <p>Built a personal investment tool that scans the market for opportunities by evaluating company fundamentals, then runs regression and logistic-regression analysis against industry benchmarks to produce a final verdict on each candidate — turning a discretionary hobby into a disciplined, data-driven process.</p>
+        <p class="meta">Personal project · Ongoing</p>
+      </div>
+    </div>
+
+    <p class="pgroup reveal">Track D — Academic Research</p>
     <div class="projects">
       <div class="card reveal">
         <span class="tag">Operations Research · Internship</span>
@@ -388,6 +439,10 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
         <p>Osmania University, India</p>
       </div>
     </div>
+    <div class="reveal" style="border:1px solid var(--line);border-top:none;background:#fffdf8;padding:20px 26px">
+      <span style="font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)">Continuing Education — AI &amp; Applied Tools · Jobescape</span>
+      <p style="font-size:14px;color:#3a4a48;margin-top:8px;line-height:1.8">Mastering Claude AI · Claude for Sales &amp; Analytics · Claude for Financial Analysis · Claude Code for Developers · Claude AI Video Creation</p>
+    </div>
   </div>
 </section>
 
@@ -397,33 +452,59 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="sec-head reveal">
       <h2>Colleague &amp; Manager Ratings</h2><span class="code">SECTION 05 / PERFORMANCE</span>
     </div>
-    <p class="ratings-intro reveal">Presented the way I once presented fund performance — rated and attributed. These are placeholders: replace each quote with real feedback from your references (with their permission).</p>
-    <div class="rating-grid">
-      <div class="tcard reveal">
-        <div class="stars" aria-label="5 out of 5">★★★★★</div>
-        <blockquote>"Replace this with a real quote from a manager — e.g. about reliability during peak cycles or ownership of client outcomes."</blockquote>
-        <p class="who"><b>Manager Name</b> — Title, Organization</p>
-      </div>
-      <div class="tcard reveal">
-        <div class="stars" aria-label="5 out of 5">★★★★★</div>
-        <blockquote>"Replace this with a colleague's words — e.g. about training support, teamwork, or communication."</blockquote>
-        <p class="who"><b>Colleague Name</b> — Title, Organization</p>
-      </div>
-      <div class="tcard reveal">
-        <div class="stars" aria-label="4 and a half out of 5">★★★★<span class="dim">★</span></div>
-        <blockquote>"A client-side quote works well here — trust, clarity of advice, responsiveness."</blockquote>
-        <p class="who"><b>Client / Stakeholder</b> — Context</p>
-      </div>
-      <div class="tcard reveal">
-        <div class="stars" aria-label="5 out of 5">★★★★★</div>
-        <blockquote>"One more voice — ideally from a different chapter of your career, so the ratings span both countries and industries."</blockquote>
-        <p class="who"><b>Reference Name</b> — Title, Organization</p>
-      </div>
+    <p class="ratings-intro reveal">Rated by the people I've actually worked with — managers, colleagues and clients. Worked with me? Add yours below.</p>
+
+    <div id="agg" class="agg reveal" hidden>
+      <span class="big" id="agg-num">–</span>
+      <span class="stars" id="agg-stars"></span>
+      <span class="cnt" id="agg-count"></span>
     </div>
-    <div class="rate-cta reveal">
-      <p><b>Worked with me?</b> I collect ratings through a short form and publish selected feedback here with permission.</p>
-      <a class="btn" href="#" aria-disabled="true">Leave a rating</a><!-- CUSTOMIZE: link this to a Google Form -->
+
+    <div id="reviews" class="rating-grid"></div>
+    <div id="reviews-empty" class="empty-state reveal">Ratings are open — be the first to rate working with Giriraj.</div>
+
+    <form id="rform" class="rform reveal" novalidate>
+      <h3>Rate working with me</h3>
+      <div class="fields">
+        <div>
+          <label for="r-name">Your name *</label>
+          <input id="r-name" name="name" maxlength="60" required autocomplete="name">
+        </div>
+        <div>
+          <label for="r-role">Role &amp; relationship (e.g. Manager, Seneca)</label>
+          <input id="r-role" name="role" maxlength="80">
+        </div>
+        <div class="full">
+          <label>Rating *</label>
+          <div class="starpick" id="starpick" role="radiogroup" aria-label="Star rating">
+            <button type="button" data-v="1" aria-label="1 star">★</button>
+            <button type="button" data-v="2" aria-label="2 stars">★</button>
+            <button type="button" data-v="3" aria-label="3 stars">★</button>
+            <button type="button" data-v="4" aria-label="4 stars">★</button>
+            <button type="button" data-v="5" aria-label="5 stars">★</button>
+          </div>
+        </div>
+        <div class="full">
+          <label for="r-comment">Comment</label>
+          <textarea id="r-comment" name="comment" maxlength="500" placeholder="What was it like working together?"></textarea>
+        </div>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+      <div class="actions">
+        <button class="btn" type="submit">Submit rating</button>
+        <span class="rmsg" id="rmsg" role="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Off the Clock</h2><span class="code">SECTION 06 / OFF THE CLOCK</span>
     </div>
+    <p class="reveal" style="font-family:var(--serif);font-size:19px;line-height:1.7;max-width:58ch">Reading, cricket, and volleyball keep me competitive; cooking keeps me patient. The rest of my free time goes into following the markets — the investment screener above started as a weekend hobby — and experimenting with new AI tools to see what they can automate next.</p>
   </div>
 </section>
 
@@ -431,17 +512,17 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
 <section id="contact" class="contact">
   <div class="wrap">
     <div class="sec-head reveal">
-      <h2>Contact</h2><span class="code">SECTION 06 / INQUIRIES</span>
+      <h2>Contact</h2><span class="code">SECTION 07 / INQUIRIES</span>
     </div>
     <div class="contact-grid reveal">
       <div>
-        <div class="row"><span>EMAIL</span><span><a href="mailto:you@example.com">you@example.com</a></span></div>
-        <div class="row"><span>LINKEDIN</span><span><a href="#" rel="me">linkedin.com/in/your-profile</a></span></div>
-        <div class="row"><span>LOCATION</span><span>Toronto, Ontario, Canada</span></div>
-        <div class="row"><span>RESUME</span><span><a href="#" download>Download PDF resume</a></span></div>
+        <div class="row"><span>EMAIL</span><span><a href="mailto:girirajpareek007@gmail.com">girirajpareek007@gmail.com</a></span></div>
+        <div class="row"><span>LINKEDIN</span><span><a href="https://linkedin.com/in/giriraj-vyas37" rel="me">linkedin.com/in/giriraj-vyas37</a></span></div>
+        <div class="row"><span>LOCATION</span><span>Edmonton, Alberta, Canada</span></div>
+        <div class="row"><span>RESUME</span><span><a href="resume.pdf" download>Download PDF resume</a></span></div>
       </div>
       <div>
-        <p style="font-family:var(--serif);font-size:19px;line-height:1.5">Open to roles as a Customer Success Manager, Customer Data &amp; Insights Manager, Business Analyst, or Business &amp; Systems Analyst — anywhere the job is understanding people, understanding systems, and closing the gap between them.</p>
+        <p style="font-family:var(--serif);font-size:19px;line-height:1.5">Open to roles as a Customer Success Manager, Customer Data &amp; Insights Manager, Business Analyst, Business &amp; Systems Analyst, or Registrar &amp; Student Services Operations — anywhere the job is understanding people, understanding systems, and closing the gap between them.</p>
       </div>
     </div>
   </div>
@@ -450,11 +531,100 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
 </main>
 
 <footer class="wrap">
-  <span>© 2026 Your Name. Fact sheet last updated July 2026.</span>
+  <span>© 2026 Giriraj Vyas. Fact sheet last updated July 2026.</span>
   <span>Built as a living portfolio — figures reflect actual work history.</span>
 </footer>
 
 <script>
+// ============================================================
+// RATINGS CONFIG — paste your Supabase details between quotes.
+// Settings → API in your Supabase dashboard:
+//   Project URL  → SUPABASE_URL
+//   anon public key → SUPABASE_KEY  (safe to publish; it's designed for this)
+// ============================================================
+const SUPABASE_URL = "";   // e.g. "https://abcd1234.supabase.co"
+const SUPABASE_KEY = "";
+
+const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const starStr = n => '★'.repeat(n) + '<span class="dim">' + '★'.repeat(5-n) + '</span>';
+const headers = { apikey: SUPABASE_KEY, Authorization: 'Bearer ' + SUPABASE_KEY, 'Content-Type': 'application/json' };
+
+async function loadReviews(){
+  const empty = document.getElementById('reviews-empty');
+  if(!SUPABASE_URL || !SUPABASE_KEY){
+    empty.textContent = 'The rating system is being configured — check back shortly.';
+    document.getElementById('rform').hidden = true;
+    return;
+  }
+  try{
+    const r = await fetch(SUPABASE_URL + '/rest/v1/reviews?select=name,role,rating,comment,created_at&approved=eq.true&order=created_at.desc&limit=50', { headers });
+    if(!r.ok) throw new Error(r.status);
+    const rows = await r.json();
+    render(rows);
+  }catch(e){
+    empty.textContent = 'Ratings could not be loaded right now — please refresh.';
+  }
+}
+
+function render(rows){
+  const grid = document.getElementById('reviews');
+  const empty = document.getElementById('reviews-empty');
+  grid.innerHTML = '';
+  if(!rows.length){ empty.hidden = false; return; }
+  empty.hidden = true;
+  rows.forEach(v => {
+    const d = document.createElement('div');
+    d.className = 'tcard';
+    const date = v.created_at ? new Date(v.created_at).toLocaleDateString('en-CA',{year:'numeric',month:'short'}) : '';
+    d.innerHTML = '<div class="stars" aria-label="'+v.rating+' out of 5">'+starStr(v.rating)+'</div>'
+      + (v.comment ? '<blockquote>"'+esc(v.comment)+'"</blockquote>' : '')
+      + '<p class="who"><b>'+esc(v.name||'Anonymous')+'</b>'+(v.role?' — '+esc(v.role):'')+(date?' · '+date:'')+'</p>';
+    grid.appendChild(d);
+  });
+  const avg = rows.reduce((a,v)=>a+v.rating,0)/rows.length;
+  document.getElementById('agg').hidden = false;
+  document.getElementById('agg-num').textContent = avg.toFixed(1);
+  document.getElementById('agg-stars').innerHTML = starStr(Math.round(avg));
+  document.getElementById('agg-count').textContent = rows.length + ' rating' + (rows.length>1?'s':'') + ' · OVERALL';
+}
+
+// star picker
+let picked = 0;
+document.querySelectorAll('#starpick button').forEach(b => {
+  b.addEventListener('click', () => {
+    picked = +b.dataset.v;
+    document.querySelectorAll('#starpick button').forEach(x => x.classList.toggle('on', +x.dataset.v <= picked));
+  });
+});
+
+document.getElementById('rform').addEventListener('submit', async e => {
+  e.preventDefault();
+  const msg = document.getElementById('rmsg');
+  const f = e.target;
+  if(f.website.value) return;                       // honeypot: silently drop bots
+  const name = f.name.value.trim();
+  if(!name){ msg.textContent = 'Please add your name.'; msg.className='rmsg err'; return; }
+  if(!picked){ msg.textContent = 'Please pick a star rating.'; msg.className='rmsg err'; return; }
+  if(localStorage.getItem('rated')){ msg.textContent = 'Looks like you already submitted a rating from this device — thank you!'; msg.className='rmsg'; return; }
+  msg.textContent = 'Submitting…'; msg.className='rmsg';
+  try{
+    const r = await fetch(SUPABASE_URL + '/rest/v1/reviews', {
+      method:'POST', headers,
+      body: JSON.stringify({ name, role: f.role.value.trim(), rating: picked, comment: f.comment.value.trim() })
+    });
+    if(!r.ok) throw new Error(r.status);
+    localStorage.setItem('rated','1');
+    msg.textContent = 'Thank you — your rating is live.';
+    f.reset(); picked = 0;
+    document.querySelectorAll('#starpick button').forEach(x=>x.classList.remove('on'));
+    loadReviews();
+  }catch(err){
+    msg.textContent = 'Something went wrong — please try again.'; msg.className='rmsg err';
+  }
+});
+
+loadReviews();
+
 // Scroll-reveal (respects reduced motion via CSS)
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); e.target.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w); io.unobserve(e.target);} });
