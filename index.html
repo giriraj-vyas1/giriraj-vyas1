@@ -381,7 +381,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="projects">
       <div class="card reveal">
         <span class="tag">Current · Business Analysis · Startup</span>
-        <h3>Rentro — Peer-to-Peer Rental Platform (Canada)</h3>
+        <h3>Rentro Peer-to-Peer Rental Platform (Canada)</h3>
         <p>Working as Business Analyst / Consultant alongside founder and investor Siddhardha Venuthurupalli on Rentro, a Canadian rental marketplace inspired by platforms like SharePal currently in the development stage. Contributing to market analysis, requirements definition, and platform workflow design.</p>
         <p class="meta">Rentro · In development · Present</p>
       </div>
@@ -504,7 +504,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="sec-head reveal">
       <h2>Off the Clock</h2><span class="code">SECTION 06 / OFF THE CLOCK</span>
     </div>
-    <p class="reveal" style="font-family:var(--serif);font-size:19px;line-height:1.7;max-width:58ch">Reading, cricket, and volleyball keep me competitive; cooking keeps me patient. The rest of my free time goes into following the markets — the investment screener above started as a weekend hobby — and experimenting with new AI tools to see what they can automate next.</p>
+    <p class="reveal" style="font-family:var(--serif);font-size:19px;line-height:1.7;max-width:58ch">Reading, cricket, and volleyball keep me competitive; cooking keeps me patient. The rest of my free time goes into following the markets the investment screener above started as a weekend hobby and experimenting with new AI tools to see what they can automate next.</p>
   </div>
 </section>
 
@@ -522,7 +522,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
         <div class="row"><span>RESUME</span><span><a href="resume.pdf" download>Download PDF resume</a></span></div>
       </div>
       <div>
-        <p style="font-family:var(--serif);font-size:19px;line-height:1.5">Open to roles as a Customer Success Manager, Customer Data &amp; Insights Manager, Business Analyst, Business &amp; Systems Analyst, or Registrar &amp; Student Services Operations — anywhere the job is understanding people, understanding systems, and closing the gap between them.</p>
+        <p style="font-family:var(--serif);font-size:19px;line-height:1.5">Open to roles as a Customer Success Manager, Customer Data &amp; Insights Manager, Business Analyst, Business &amp; Systems Analyst, or Registrar &amp; Student Services Operations anywhere the job is understanding people, understanding systems, and closing the gap between them.</p>
       </div>
     </div>
   </div>
@@ -532,7 +532,7 @@ footer{padding:36px 0 48px;font-family:var(--mono);font-size:12px;color:var(--mu
 
 <footer class="wrap">
   <span>© 2026 Giriraj Vyas. Fact sheet last updated July 2026.</span>
-  <span>Built as a living portfolio — figures reflect actual work history.</span>
+  <span>Built as a living portfolio figures reflect actual work history.</span>
 </footer>
 
 <script>
@@ -562,7 +562,7 @@ async function loadReviews(){
     const rows = await r.json();
     render(rows);
   }catch(e){
-    empty.textContent = 'Ratings could not be loaded right now — please refresh.';
+    empty.textContent = 'Ratings could not be loaded right now please refresh.';
   }
 }
 
@@ -605,7 +605,7 @@ document.getElementById('rform').addEventListener('submit', async e => {
   const name = f.name.value.trim();
   if(!name){ msg.textContent = 'Please add your name.'; msg.className='rmsg err'; return; }
   if(!picked){ msg.textContent = 'Please pick a star rating.'; msg.className='rmsg err'; return; }
-  if(localStorage.getItem('rated')){ msg.textContent = 'Looks like you already submitted a rating from this device — thank you!'; msg.className='rmsg'; return; }
+  if(localStorage.getItem('rated')){ msg.textContent = 'Looks like you already submitted a rating from this device, thank you!'; msg.className='rmsg'; return; }
   msg.textContent = 'Submitting…'; msg.className='rmsg';
   try{
     const r = await fetch(SUPABASE_URL + '/rest/v1/reviews', {
@@ -614,12 +614,12 @@ document.getElementById('rform').addEventListener('submit', async e => {
     });
     if(!r.ok) throw new Error(r.status);
     localStorage.setItem('rated','1');
-    msg.textContent = 'Thank you — your rating is live.';
+    msg.textContent = 'Thank you! your rating is live.';
     f.reset(); picked = 0;
     document.querySelectorAll('#starpick button').forEach(x=>x.classList.remove('on'));
     loadReviews();
   }catch(err){
-    msg.textContent = 'Something went wrong — please try again.'; msg.className='rmsg err';
+    msg.textContent = 'Something went wrong, please try again.'; msg.className='rmsg err';
   }
 });
 
